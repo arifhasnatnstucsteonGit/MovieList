@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_marginLeft="@dimen/count_10dp"
+    android:layout_marginRight="@dimen/count_10dp"
+    android:layout_marginTop="@dimen/count_5dp"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/count_1dp"
+        android:elevation="@dimen/count_1dp"
+        android:layout_margin="@dimen/count_2dp"
+        android:background="@color/white"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/count_5dp"
+            android:layout_marginBottom="@dimen/count_5dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/poster"
+                    android:layout_width="@dimen/count_80dp"
+                    android:layout_height="@dimen/count_60dp"
+                    android:src="@drawable/ic_launcher_background"
+                  />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/count_5dp"
+              >
+
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:maxLines="3"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/count_16sp"
+                    android:textColor="@color/black" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
